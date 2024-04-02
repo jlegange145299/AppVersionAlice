@@ -209,7 +209,7 @@ def main():
 
                 # Accept user input
                 
-    with col1:        
+   # with col1:        
         if prompt := st.chat_input("Hello how can I help?"):
             print("---------------------PROMPT RECEIVED-------------------")
             print(f"PROMPT: {prompt}")
