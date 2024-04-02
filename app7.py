@@ -204,8 +204,8 @@ def main():
         # Display existing messages in the chat
         for message in st.session_state.messages:
             with st.chat_message(message["role"]):
-                with col1:
-                    st.markdown(message["content"])
+                #with col1:
+                 st.markdown(message["content"])
 
                 # Accept user input
                 
@@ -256,8 +256,8 @@ def main():
             print(f"MESSAGES: {st.session_state.messages}")       
                                                               
             video_url = generate_video(processed_response[:350])
-            with col1:
-             st.write(f'<video width="640" height="480" controls autoplay><source src="{video_url}" type="video/mp4"></video>', unsafe_allow_html=True)
+            #with col1:
+            st.write(f'<video controls autoplay><source src="{video_url}" type="video/mp4"></video>', unsafe_allow_html=True)
   
              with st.chat_message("assistant"):
                   st.markdown(processed_response)
