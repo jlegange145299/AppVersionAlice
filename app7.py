@@ -217,8 +217,8 @@ def main():
             st.session_state.messages.append({"role": "user", "content": prompt})
             print(f"MESSAGES: {st.session_state.messages}")
             # Display user message in chat message container
-            with col1:
-                with st.chat_message("user"):
+            #with col1:
+            with st.chat_message("user"):
                     st.markdown(prompt)
 
             # Create a thread
