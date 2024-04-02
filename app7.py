@@ -158,16 +158,16 @@ def main():
     ) 
        
     
-    col1,col2 = st.columns(2)       
+    #col1,col2 = st.columns(2)       
         
-    with col1:                    
+    #with col1:                    
          image_path = "https://logos-world.net/wp-content/uploads/2022/05/Cigna-Logo.png"
          st.image(image_path, caption='',width=300)    
 
-    with col2:
-        with st.expander("About",expanded=True):             
-                st.header("I am trained on the below collaterals")
-                st.image(image3_path, caption='https://photosfordidd.s3.eu-central-1.amazonaws.com/Cigna+Healthguard+Brochure.pdf')
+    #with col2:
+        #with st.expander("About",expanded=True):             
+                #st.header("I am trained on the below collaterals")
+                #st.image(image3_path, caption='https://photosfordidd.s3.eu-central-1.amazonaws.com/Cigna+Healthguard+Brochure.pdf')
                 #st.image(image4_path, caption='',width=640)
                
     st.sidebar.write(f'<video width="300" height="220" controls autoplay><source src="{video_path}" type="video/mp4"></video>', unsafe_allow_html=True)  
@@ -255,7 +255,7 @@ def main():
                 )    
             print(f"MESSAGES: {st.session_state.messages}")       
                                                               
-            video_url = generate_video(processed_response[:225])
+            video_url = generate_video(processed_response[:350])
             with col1:
              st.write(f'<video width="640" height="480" controls autoplay><source src="{video_url}" type="video/mp4"></video>', unsafe_allow_html=True)
   
