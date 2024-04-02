@@ -258,8 +258,8 @@ def main():
             video_url = generate_video(processed_response[:350])
             #with col1:
             st.write(f'<video controls autoplay><source src="{video_url}" type="video/mp4"></video>', unsafe_allow_html=True)
-  
-             with st.chat_message("assistant"):
+              
+            with st.chat_message("assistant"):
                   st.markdown(processed_response)
                  
 if __name__ == "__main__":
