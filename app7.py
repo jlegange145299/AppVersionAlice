@@ -161,8 +161,8 @@ def main():
     #col1,col2 = st.columns(2)       
         
     #with col1:                    
-         image_path = "https://logos-world.net/wp-content/uploads/2022/05/Cigna-Logo.png"
-         st.image(image_path, caption='',width=300)    
+    image_path = "https://logos-world.net/wp-content/uploads/2022/05/Cigna-Logo.png"
+    st.image(image_path, caption='',width=300)    
 
     #with col2:
         #with st.expander("About",expanded=True):             
